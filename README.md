@@ -22,7 +22,7 @@ This project is a Node.js application template setup with testing, linting, and 
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/node_application_template.git
+   git clone https://github.com/mkrana222/node_application_template.git
    ```
 2. Install dependencies:
    ```sh
