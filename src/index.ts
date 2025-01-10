@@ -7,12 +7,14 @@ import config from "../config/config";
   console.log("****** Environment:[", config.env, "] ***********");
 })();
 const port = config.port;
-const app: Express = express();
+export const app: Express = express();
 
 app.get("/", (req, res) => {
-  res.send("API is working fine");
+  res.status(200).send("API is working fine");
 });
 
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+sequelize.authenticate().then(() => {
+  app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
+  });
 });

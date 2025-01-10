@@ -1,8 +1,9 @@
+import request from "supertest";
+import { app } from "../index";
+
 describe("sum function", () => {
-  it("should return a sum", () => {
-    function sum(a: number, b: number) {
-      return a + b;
-    }
-    expect(sum(1, 2)).toBe(3);
+  it("should return health check of api", async () => {
+    const response = await request(app).get("/");
+    expect(response.statusCode).toBe(200);
   });
 });
