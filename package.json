@@ -15,7 +15,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@types/sequelize": "^4.28.20",
     "express": "^4.21.2",
     "pg": "^8.13.1",
     "reflect-metadata": "^0.2.2",
@@ -26,6 +25,7 @@
     "@types/express": "^5.0.0",
     "@types/jest": "^29.5.14",
     "@types/node": "^22.10.5",
+    "@types/sequelize": "^4.28.20",
     "@types/supertest": "^6.0.2",
     "@types/validator": "^13.12.2",
     "concurrently": "^9.1.2",
